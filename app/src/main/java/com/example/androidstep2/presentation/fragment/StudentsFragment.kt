@@ -1,11 +1,11 @@
-package com.example.androidstep2.fragment
+package com.example.androidstep2.presentation.fragment
 
 import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.androidstep2.adapter.StudentsAdapter
+import com.example.androidstep2.presentation.adapter.StudentsAdapter
 import com.example.androidstep2.data.Student
 import kotlinx.android.synthetic.main.fragment_students.*
 import android.content.Context

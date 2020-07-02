@@ -1,4 +1,4 @@
-package com.example.androidstep2.adapter
+package com.example.androidstep2.presentation.adapter
 
 import android.content.Context
 import android.util.Log
@@ -9,8 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.androidstep2.R
 import com.example.androidstep2.data.Student
 import com.example.androidstep2.data.StudentsGroup
-import com.example.androidstep2.viewholder.StudentsGroupHolder
-import com.example.androidstep2.viewholder.StudentsHolder
+import com.example.androidstep2.presentation.viewholder.StudentsGroupHolder
+import com.example.androidstep2.presentation.viewholder.StudentsHolder
 
 
 class StudentsAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder> {

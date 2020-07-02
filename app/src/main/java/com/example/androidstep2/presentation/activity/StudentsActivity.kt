@@ -1,11 +1,10 @@
-package com.example.androidstep2.activity
+package com.example.androidstep2.presentation.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.androidstep2.R
-import com.example.androidstep2.data.Student
-import com.example.androidstep2.fragment.StudentsFragment
+import com.example.androidstep2.presentation.fragment.StudentsFragment
 
 class StudentsActivity : AppCompatActivity(){
 

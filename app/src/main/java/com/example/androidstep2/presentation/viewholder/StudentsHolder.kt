@@ -1,4 +1,4 @@
-package com.example.androidstep2.viewholder
+package com.example.androidstep2.presentation.viewholder
 
 import android.content.Context
 import android.view.View

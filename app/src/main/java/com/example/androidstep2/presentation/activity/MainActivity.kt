@@ -1,15 +1,10 @@
-package com.example.androidstep2.activity
+package com.example.androidstep2.presentation.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
-import androidx.fragment.app.Fragment
 import com.example.androidstep2.R
-import com.example.androidstep2.data.ListNode
 import com.example.androidstep2.data.Student
-import com.example.androidstep2.fragment.StudentsFragment
-import org.w3c.dom.Node
-import org.w3c.dom.NodeList
 
 class MainActivity : AppCompatActivity() {
 
