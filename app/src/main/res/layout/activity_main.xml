@@ -7,6 +7,7 @@
     tools:context=".activity.MainActivity">
 
     <TextView
+        android:id="@+id/topstudent1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -14,5 +15,29 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/topstudent2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintTop_toBottomOf="@+id/topstudent1"
+        app:layout_constraintLeft_toLeftOf="@+id/topstudent1" />
+
+    <TextView
+        android:id="@+id/topstudent3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintTop_toBottomOf="@+id/topstudent2"
+        app:layout_constraintLeft_toLeftOf="@+id/topstudent2" />
+
+
+    <TextView
+        android:id="@+id/palindrome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintTop_toBottomOf="@+id/topstudent3"
+        app:layout_constraintLeft_toLeftOf="@+id/topstudent3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

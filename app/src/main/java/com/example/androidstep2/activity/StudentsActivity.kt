@@ -4,11 +4,10 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.androidstep2.R
+import com.example.androidstep2.data.Student
 import com.example.androidstep2.fragment.StudentsFragment
 
 class StudentsActivity : AppCompatActivity(){
-
-    var currentFragment: Fragment? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,6 +15,7 @@ class StudentsActivity : AppCompatActivity(){
 
         initializeDefaultFragment()
     }
+    var currentFragment: Fragment? = null
 
     fun initializeDefaultFragment(){
         if(currentFragment == null){

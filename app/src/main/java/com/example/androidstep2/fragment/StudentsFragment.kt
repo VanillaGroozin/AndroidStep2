@@ -72,15 +72,15 @@ class StudentsFragment : Fragment(), View.OnClickListener {
     }
 
     fun initializeData(){
-        var student = Student("Vasya", "Good Student", "1")
+        var student = Student("Vasya", "Good Student", "1", 1)
         students.add(student)
         studentsGroup.add(StudentsGroup("First group", student))
 
-        student = Student("John", "Bad Student","2")
+        student = Student("John", "Bad Student","2", 2)
         students.add(student)
         studentsGroup.add(StudentsGroup("Second group", student))
 
-        student = Student("Log", "Average Student","3")
+        student = Student("Log", "Average Student","3",3)
         students.add(student)
         studentsGroup.add(StudentsGroup("Third group", student))
     }
