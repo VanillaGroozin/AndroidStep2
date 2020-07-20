@@ -1,5 +1,6 @@
 package com.example.androidstep2.presentation.activity
 
+import android.graphics.Bitmap
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
@@ -40,14 +41,22 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun initializeData() {
-        students.add(Student("Student1", "i hate this", "1", 1))
-        students.add(Student("Student2", "i hate this", "2", 2))
-        students.add(Student("Student3", "i hate this", "3", 3))
-        students.add(Student("Student4", "i hate this", "4", 4))
-        students.add(Student("Student5", "i hate this", "5", 5))
-        students.add(Student("Student6", "i hate this", "1", 4))
-        students.add(Student("Student7", "i hate this", "2", 3))
-        students.add(Student("Student8", "i hate this", "3", 2))
+        students.add(Student("Student1", "i hate this", "1", 1, Bitmap.createBitmap(100, 100,
+            Bitmap.Config.ARGB_8888)))
+        students.add(Student("Student2", "i hate this", "2", 2, Bitmap.createBitmap(100, 100,
+            Bitmap.Config.ARGB_8888)))
+        students.add(Student("Student3", "i hate this", "3", 3,Bitmap.createBitmap(100, 100,
+            Bitmap.Config.ARGB_8888)))
+        students.add(Student("Student4", "i hate this", "4", 4,Bitmap.createBitmap(100, 100,
+            Bitmap.Config.ARGB_8888)))
+        students.add(Student("Student5", "i hate this", "5", 5,Bitmap.createBitmap(100, 100,
+            Bitmap.Config.ARGB_8888)))
+        students.add(Student("Student6", "i hate this", "1", 4,Bitmap.createBitmap(100, 100,
+            Bitmap.Config.ARGB_8888)))
+        students.add(Student("Student7", "i hate this", "2", 3,Bitmap.createBitmap(100, 100,
+            Bitmap.Config.ARGB_8888)))
+        students.add(Student("Student8", "i hate this", "3", 2,Bitmap.createBitmap(100, 100,
+            Bitmap.Config.ARGB_8888)))
     }
 
 

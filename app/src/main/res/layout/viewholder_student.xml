@@ -37,6 +37,10 @@
         tools:text="Хороший студент"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/imageview_viewholder_student_avatar"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
 
 <!--    <TextView-->
 <!--        android:text="@string/viewholder_student_mark_header"-->

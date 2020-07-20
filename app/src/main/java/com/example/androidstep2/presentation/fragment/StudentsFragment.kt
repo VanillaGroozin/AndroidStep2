@@ -9,6 +9,7 @@ import com.example.androidstep2.presentation.adapter.StudentsAdapter
 import com.example.androidstep2.data.Student
 import kotlinx.android.synthetic.main.fragment_students.*
 import android.content.Context
+import android.graphics.Bitmap
 import android.util.Log
 import android.view.LayoutInflater
 import com.example.androidstep2.R
@@ -20,9 +21,9 @@ class StudentsFragment : Fragment(), View.OnClickListener {
     var rootView: View? = null
 
     var students: ArrayList<Student> = ArrayList()
-    var studentsGroup: ArrayList<StudentsGroup> = ArrayList() // Контейнер с деталями
+    var studentsGroup: ArrayList<StudentsGroup> = ArrayList()
 
-    var studentsAdapter: StudentsAdapter? = null // Рабочий на конвеере
+    var studentsAdapter: StudentsAdapter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -72,15 +73,18 @@ class StudentsFragment : Fragment(), View.OnClickListener {
     }
 
     fun initializeData(){
-        var student = Student("Vasya", "Good Student", "1", 1)
+        var student = Student("Vasya", "Good Student", "1", 1, Bitmap.createBitmap(100, 100,
+            Bitmap.Config.ARGB_8888))
         students.add(student)
         studentsGroup.add(StudentsGroup("First group", student))
 
-        student = Student("John", "Bad Student","2", 2)
+        student = Student("John", "Bad Student","2", 2, Bitmap.createBitmap(100, 100,
+            Bitmap.Config.ARGB_8888))
         students.add(student)
         studentsGroup.add(StudentsGroup("Second group", student))
 
-        student = Student("Log", "Average Student","3",3)
+        student = Student("Log", "Average Student","3",3, Bitmap.createBitmap(100, 100,
+            Bitmap.Config.ARGB_8888))
         students.add(student)
         studentsGroup.add(StudentsGroup("Third group", student))
     }
